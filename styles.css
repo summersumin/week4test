@@ -1,0 +1,35 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    overflow: hidden; /* 스크롤바 숨기기 */
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* 비율 유지하면서 화면 꽉 채우기 */
+    transform: scaleX(-1); /* 좌우 반전 */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* 캔버스는 마우스 이벤트 무시 */
+    z-index: 1;
+    transform: scaleX(-1); /* 좌우 반전 */
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    cursor: pointer;
+}
